@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: 'Figtree', sans-serif;
+    min-height: 100vh;
+    background-color: hsl(47, 88%, 63%);
+    font-size: 16px;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+p{
+    color: hsl(0, 0%, 50%);
+    font-weight: 600;
+}
+
+
+.large{
+    font-weight: 800;
+}
+
+
+.large, .flex-item p{
+    color: hsl(0, 0%, 7%);
+}
+.container{
+    width: fit-content;
+    margin: 0 auto;
+    background-color: #ffff;
+    border-radius: 10px;
+    max-width: 800px;
+    border: 1px solid black;
+    box-shadow: 8px 5px 3px rgb(0, 0, 0);
+}
+
+.wrapper{
+    display: grid;
+    place-content: center;
+    padding: 20px;
+}
+
+.wrapper h2, .wrapper p{
+    text-align: start;
+}
+
+.flex-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-img{
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+button{
+    background-color: hsl(47, 88%, 63%);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.published-p{
+    margin-bottom: 20px;
+}
+
+.lang-p{
+    margin: 20px 0;
+}
+
+.avatar{
+    width: 50px;
+}
+
+.yellow-tag{
+    text-decoration: none;
+    cursor: pointer;
+    color: hsl(0, 0%, 7%);
+}
+
+.yellow-tag:hover{
+    color: hsl(47, 88%, 63%);
+}
+
+.attribution{
+    padding: 2rem 0;
+}
+@media screen and (max-width: 420px) {
+    .container {
+        width: 60%; 
+        margin: 0 auto;
+        padding: 1.5rem 1rem; 
+    }
+
+    .wrapper {
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    
+    .main-img {
+        width: 100%;
+    }
+
+    .flex-item{
+        text-align: left;
+    }
+
+    .large{
+        font-weight: 200;
+    }
+}
